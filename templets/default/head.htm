@@ -1,0 +1,45 @@
+<div id="page-wrap">
+  <!--头部开始-->
+  <div id="header">
+  <div id="top">
+  <div class="logo"><a href="/"><img src="/images1/logo.png" /></a></div>
+  <div id="navigation">
+  <div class="menu-yi_ban_qi_ye_cai_dan-container">
+  <ul id="menu-yi_ban_qi_ye_cai_dan" class="menu">
+    <li id="menu-item-49" class="menu-item menu-item-object-custom menu-item-home menu-item-49"><a href="/">首页</a></li>
+	{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='1')@me='<li id="menu-item-50" class="menu-item menu-item-type-post_type current-menu-item menu-item-object-page menu-item-has-children menu-item-50">';else@me='<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-50">';{/dede:field.typeid}<a href="/about/">关于弥亚</a>
+	  <ul class="sub-menu">
+	  {dede:channel typeid='1' type='son'}
+	  <li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href='[field:typeurl/]'>[field:typename/]</a></li>
+	  {/dede:channel}
+	  </ul>
+	</li>
+	{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='2')@me='<li id="menu-item-47" class="menu-item menu-item-type-taxonomy current-menu-item menu-item-object-category menu-item-has-children menu-item-47">';else@me='<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-47">';{/dede:field.typeid}<a href="/syzp/">摄影作品</a>
+	  <ul class="sub-menu">
+	  {dede:channel typeid='2' type='son'}
+	  <li id="menu-item-48" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48"><a href='[field:typeurl/]'>[field:typename/]</a></li>
+	  {/dede:channel}
+	  </ul>
+    </li>
+	{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='3')@me='<li id="menu-item-47" class="menu-item menu-item-type-taxonomy current-menu-item menu-item-object-category menu-item-has-children menu-item-47">';else@me='<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-47">';{/dede:field.typeid}<a href="/syjd/">摄影景点</a>
+	  <ul class="sub-menu">
+	  {dede:channel typeid='3' type='son'}
+	  <li id="menu-item-48" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48"><a href='[field:typeurl/]'>[field:typename/]</a></li>
+	  {/dede:channel}
+	  </ul>
+    </li>
+	{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='4')@me='<li id="menu-item-47" class="menu-item menu-item-type-taxonomy current-menu-item menu-item-object-category menu-item-has-children menu-item-47">';else@me='<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-47">';{/dede:field.typeid}<a href="/fwbj/">服务报价</a></li>
+	{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='5')@me='<li id="menu-item-46" class="menu-item menu-item-type-taxonomy current-menu-item menu-item-object-category menu-item-has-children menu-item-46">';else@me='<li id="menu-item-46" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-46">';{/dede:field.typeid}<a href="/news/">新闻资讯</a>
+	  <ul class="sub-menu">
+	  {dede:channel typeid='5' type='son'}
+	  <li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53"><a href='[field:typeurl/]'>[field:typename/]</a></li>
+	  {/dede:channel}
+	  </ul>
+	</li>
+	{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='6')@me='<li id="menu-item-52" class="menu-item menu-item-type-post_type current-menu-item menu-item-object-page menu-item-52">';else@me='<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52">';{/dede:field.typeid}<a href="/contact/">联系我们</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!--头部结束-->

@@ -1,0 +1,1 @@
+<li class="elsr"><a href="[field:arcurl/]" title="[field:fulltitle/]" class="s_tlt">[field:title/]</a></li>

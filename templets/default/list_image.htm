@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel='stylesheet' id='NextGEN-css'  href='/css/nggallery.css?ver=1.0.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='shutter-css'  href='/css/shutter-reloaded.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='jquery.lightbox.min.css-css'  href='/css/lightbox.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='pages-css'  href='/css/zdy1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='stylesheet-css'  href='/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto-css'  href='/css/prettyPhoto.css' type='text/css' media='all' />
+<link rel='stylesheet' id='zdy2-css'  href='/css/zdy2.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var shutterSettings = {"msgLoading":"\u6b63\u5728\u8f7d\u5165\u2026","msgClose":"\u70b9\u51fb\u5173\u95ed","imageCount":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/js/shutter-reloaded.js?ver=1.3.3'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script type='text/javascript' src='/js/jquery.cycle.all.min.js?ver=2.9995'></script>
+<script type='text/javascript' src='/js/ngg.slideshow.min.js?ver=1.06'></script>
+<script type='text/javascript' src='/js/script.js'></script>
+<script type='text/javascript' src='/js/pngtm.js'></script>
+<script type='text/javascript' src='/js/jquery.prettyPhoto.js'></script>
+</head>
+<body class="archive category category-company-case category-1">
+{dede:include filename="head.htm"/}
+<div class="ny5" style="background:url(http://www.themepark.com.cn/demo/wp-content/themes/moban10/images/p1.jpg) center;">
+  <div class="ny5_1"><b> 最新<a> {dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='2')@me='作品';else if(@me=='3')@me='景点';{/dede:field.typeid}</a> 欣赏 </b><p><br />弥亚摄影所展示的作品均来自真实客人定制照片，并经由客户本人同意在弥亚摄影唯一官方网站行发表。未经允许不得转载或用于任何商业用途，违者必究！</p></div>
+  <div class="ny5_2">
+  <h3><a href="#">{dede:field name='typeid' function="GetTopTypename(@me)" /}<b> {dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='2')@me='WORK';else if(@me=='3')@me='SPOTS';{/dede:field.typeid} </b></a><p>Welcome To MIYA photography</p></h3>
+  <ul>
+    {dede:channel type='son'}
+	<li class="cat-item cat-item-10"><a href='[field:typeurl/]'>[field:typename/]</a></li>
+	{/dede:channel}
+  </ul>
+  </div>
+</div>
+<div class="ny6">
+  {dede:list pagesize='6' titlelen='40'}
+  <div class="ny6_1">
+    <div class="m9">
+    <img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]" width="310" height="425" />
+    <a href="[field:arcurl/]" title="[field:fulltitle function='htmlspecialchars(@me)'/]"><img src="/images1/d04.png" /></a>
+    </div>
+    <h2><a href="[field:arcurl/]" title="[field:fulltitle function='htmlspecialchars(@me)'/]">[field:title/]</a></h2>
+    <div class="m10">POST TIME:[field:pubdate function="MyDate('Y/m/d',@me)"/]</div>
+  </div>
+  {/dede:list}
+  <div style="font: 0px/0px sans-serif;clear: both;display: block"></div>
+  <div class="MyPage">{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="2"/}</div>
+</div>
+<div class="ny7"><div class="fy"></div></div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

@@ -1,0 +1,58 @@
+  <!--左侧开始-->
+  <div class="zb">
+  <div class="k1"><h1><a href="#"> {dede:field name='typeid' function="GetTopTypename(@me)" /}  <b>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='5')@me='NEWS';else if(@me=='11')@me='Activities';else if(@me=='4')@me='PRICE';else if(@me=='10')@me='dynamic';else if(@me=='2')@me='WORK';else if(@me=='3')@me='SPOTS';else if(@me=='6')@me='contact';{/dede:field.typeid} </b></a></h1><P>Welcome To MIYA photography</P></div>
+  <ul class="nav_left">
+    {dede:channel type='son' currentstyle="<li class='current_page_item'><a href='~typelink~'>~typename~</a></li>"}
+	<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+	{/dede:channel}
+  </ul>
+  <div id="sidebar">
+  <div class="widget" id="search">
+  <b>13983200442</b>
+  <form method="post" id="searchform"  action="/plus/search.php" target="_blank">
+  <input name="kwtype" value="1" type="hidden">
+  <input name="searchtype" value="titlekeyword" type="hidden">
+  <div>
+  <div class="screen-reader-text" for="s">站内搜索 Search</div>
+  <input type="text" value="" name="keyword" id="s">
+  <input type="submit" id="searchsubmit" value="">
+  </div>
+  </form>
+  </div>
+  <!--案例开始-->
+  <div class="widget" id="cat_news">
+  <h2> <a href="/syzp/">最新案例<b>case</b> </a></h2>
+  <ul>
+  {dede:arclist type='image' typeid='2' titlelen='35' row='2' orderby='pubdate'}
+  <li>
+    <a href="[field:arcurl/]" title="[field:fulltitle/]" class="new_tu_img">
+    <span class="tu_sidbar_hover"></span>
+    <img width="238" height="346" class="attachment-news-sidbar-thumb wp-post-image"  src="[field:litpic/]" alt="[field:fulltitle/]" ></a> 
+    <div class="shuom"><a href="[field:arcurl/]" title="[field:fulltitle/]" class="s_tlt">[field:title/]</a></div>
+  </li>
+  {/dede:arclist}
+  </ul>
+  </div>
+  <!--案例结束-->
+  <!--活动开始-->
+  <div class="widget" id="cat_event">
+  <h2> <a href="/huodong/">最新促销活动<b>Latest Events</b> </a></h2>
+  <ul>
+  {dede:arclist type='image' typeid='11' titlelen='17' infolen='35' orderby='pubdate' limit='0,1'}
+  <li class="firest">
+    <a href="[field:arcurl/]" title="[field:fulltitle/]" class="new_tu_img_huodong"><img src="[field:litpic/]" alt="[field:fulltitle/]"/></a> 
+    <div class="shuom2"> 
+    <a href="[field:arcurl/]" title="[field:fulltitle/]" class="s_tlt">[field:title/]</a>
+    <a class="time">[field:info/]...</a>
+    </div>
+  </li>
+  {/dede:arclist}
+  {dede:arclist typeid='11' titlelen='38' orderby='pubdate' limit='1,4'}
+  <li class="elsr"><a href="[field:arcurl/]" title="[field:fulltitle/]" class="s_tlt">[field:title/]</a></li>
+  {/dede:arclist}
+  </ul>
+  </div>
+  <!--活动结束-->
+  </div>      
+  </div>
+  <!--左侧结束-->

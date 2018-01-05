@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=gb2312'>
+<title>预约挂号信息修改</title>
+<link href='img/base.css' rel='stylesheet' type='text/css'>
+<script src="../images/js/calendar.js" type="text/javascript"></script>
+</head>
+<body background='img/allbg.gif' leftmargin='8' topmargin='8'>
+<table width="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#E2F5BC">
+  <tr>
+    <td height="28" background="img/tbg.gif">
+    	<b><a href="yuyue_admin.php"><u>预约挂号管理</u></a></b> &gt;&gt; 信息查看/修改</td>
+</tr>
+<tr>
+    <td height="200" bgcolor="#FFFFFF" valign="top">
+	<form action="yuyue_edit.php" method="post" name="form1">
+	<input type="hidden" name="aid" value="<?php echo $row['id']?>">
+	<input type="hidden" name="dopost" value="saveedit">
+	<table width="80%"  border="0" cellspacing="1" cellpadding="3">
+	  <tr>
+        <td width="19%" height="25">姓名：</td>
+        <td width="81%"><input name="name" type="text" value="<?php echo $row['name']?>" size="20" class='pubinputs' /></td>
+      </tr>
+      <tr>
+        <td width="19%" height="25">性别：</td>
+        <td width="81%">
+		  <select name="sex">
+            <option value="<?php echo $row['sex']?>" selected="selected"><?php echo $row['sex']?></option>
+            <option value="男">男</option>
+            <option value="女">女</option>
+          </select>		</td>
+      </tr>
+      <tr>
+        <td height="25">年龄：</td>
+        <td><input name="age" type="text" value="<?php echo $row['age']?>" size="10" class='pubinputs' /></td>
+      </tr>
+      <tr>
+        <td height="25">日期：</td>
+        <td><input name="date" type="text" onClick="setday(this)" value="<?php echo $row['date']?>" size="10" class='pubinputs' />
+             <select name="time">
+             <option value="<?php echo $row['time']?>" selected="selected"><?php echo $row['time']?></option>
+             <option value="上午">上午</option>
+             <option value="下午">下午</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td height="25">家庭住址：</td>
+        <td><input name="address" type="text" size="60" value="<?php echo $row['address']?>" class='pubinputs' /></td>
+      </tr>
+      <tr>
+        <td height="25">联系电话：</td>
+        <td>
+        	<input name="hometel" type="text" size="40" value="<?php echo $row['hometel']?>" class='pubinputs'/>       </td>
+      </tr>
+      <tr>
+        <td height="25">联系邮箱：</td>
+        <td><input name="email" type="text" size="40" value="<?php echo $row['email']?>" class='pubinputs' />		</td>
+      </tr>
+     <tr>
+        <td height="25">是否预约：</td>
+        <td><select name="state">
+          <option value="0">未预约</option>
+          <option value="1">已预约</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td height="25">病情描述：</td>
+        <td>
+		<textarea name="ill" cols="50" rows="4"><?php echo $row['ill']?></textarea>		</td>
+      </tr>
+      <tr>
+        <td height="51">&nbsp;</td>
+        <td>
+        	<input type="submit" name="Submit" value=" 提 交 " class="coolbg" />　 　
+          <input type="reset" name="Submit" value=" 返 回 " onClick="location.href='<?php echo $ENV_GOBACK_URL?>';" class="coolbg" />         </td>
+      </tr>
+    </table>
+	</form>
+ </td>
+</tr>
+</table>
+</body>
+</html>

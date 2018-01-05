@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="design by www.dede58.com" />
+<link rel='stylesheet' id='NextGEN-css'  href='/css/nggallery.css?ver=1.0.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='shutter-css'  href='/css/shutter-reloaded.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='jquery.lightbox.min.css-css'  href='/css/lightbox.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='pages-css'  href='/css/zdy1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='stylesheet-css'  href='/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto-css'  href='/css/prettyPhoto.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var shutterSettings = {"msgLoading":"\u6b63\u5728\u8f7d\u5165\u2026","msgClose":"\u70b9\u51fb\u5173\u95ed","imageCount":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/js/shutter-reloaded.js?ver=1.3.3'></script>
+<script type='text/javascript' src='/js/jquery.min.js'></script>
+<script type='text/javascript' src='/js/jquery.cycle.all.min.js?ver=2.9995'></script>
+<script type='text/javascript' src='/js/ngg.slideshow.min.js?ver=1.06'></script>
+<script type='text/javascript' src='/js/script.js'></script>
+<script type='text/javascript' src='/js/pngtm.js'></script>
+<script type='text/javascript' src='/js/jquery.prettyPhoto.js'></script>
+</head>
+<body class="home blog">
+{dede:include filename="head.htm"/}
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/slider.js"></script>
+<script type="text/javascript" src="/js/jquery.SuperSlide.js"></script>
+<!--banner开始-->
+<div class="ym1">
+  <div id="box">
+  <div class="header-content home">
+  <div class="parallax-bg" id="slider-wrap">
+  <div class="slider parallax-bg" id="slider"> 
+  <div class="slider-sections sandbox"> 
+  <section class="first">
+    <div class="pic"  style="background:url(/images1/b2.png) center no-repeat"></div>
+	<div class="text">
+	<h2 class="box_bitit1"><span>01</span><b>婚庆跟拍</b></h2>
+	<p class="copy">
+	<b>WEDDING WITH PAT</b>让您的美能达到与众不同的境界</p>
+	<p class="button"><a href="#">MORE ></a></p>
+	</div>
+  </section>
+  <section>
+    <div class="pic" style="background:url(/images1/b1.png) center no-repeat"></div>
+    <div class="text">
+	<h2 class="box_bitit1"><span>02</span><b>婚纱摄影</b></h2>
+	<p class="copy">
+	<b>WEDDING PHOTOGRAPHY</b>铺就了徘徊寻觅的记忆</p>
+	<p class="button"><a href="#">MORE ></a></p>
+	</div>
+  </section>
+  <section>
+    <div class="pic" style="background:url(/images1/b3.png) center no-repeat"></div>
+	<div class="text">
+	<h2 class="box_bitit1"><span>03</span><b>艺术摄影</b></h2>
+	<p class="copy"><b>ART PHOTOGRAPHY</b>感动美丽，精心丽质</p>
+	<p class="button"><a href="#">MORE ></a></p>
+	</div>
+  </section>
+  </div>
+  </div>
+  <a class="slider-prev" onClick="selectTag('tagContent0',this)" href="javascript: void(0)" onFocus=this.blur()>?</a> 
+  <a class="slider-next" onClick="selectTag('tagContent0',this)" href="javascript: void(0)" onFocus=this.blur()>?</a>
+  </div>
+  </div>
+  </div>
+</div>
+<!--banner结束-->
+<!--活动开始-->
+<div class="ym2">
+  <div class="ym2_1">
+  <!--左侧开始-->
+  <div class="a1">
+  <div id="demoContent">
+  <div class="effect" style="width:330px">
+  <div class="leftLoop">
+  <div class="bd">
+    <ul class="picList">
+	{dede:arclist type='image' typeid='10' row='5' orderby='pubdate'}
+	<li><a href="[field:arcurl/]" target="_blank" title="[field:fulltitle/]"><img src="[field:litpic/]" alt="[field:fulltitle/]" /></a></li>
+	{/dede:arclist}
+	</ul>
+  </div>
+  <div class="hd">
+  <ul><li>1</li><li>2</li><li>3</li></ul>
+  </div>
+  <div class="gd1"><a class="prev" href="javascript: void(0)"></a></div>
+  <div class="gd2"><a class="next" href="javascript: void(0)"></a></div>
+  </div>
+  <script type="text/javascript">jQuery(".leftLoop").slide({ mainCell:".bd ul",effect:"leftLoop",vis:1,scroll:1,autoPlay:true});</script>
+  </div>
+  </div>
+  </div>
+  <!--左侧结束-->
+  <!--右侧开始-->
+  <div class="a2">
+  <h3><img src="/images1/bt1.jpg" /><div class="ck"><a class="ck_more" href="/huodong/"> MORE ></a></div></h3>
+  <div class="a2_1">
+  {dede:arclist typeid='11' row='3' titlelen='20' infolen='250' orderby='pubdate' addfields='hdqx' channelid='1'}
+  <div class="lie1">
+    <h3 id="bt_activities"><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h3>
+    <p>[field:info/]...</p>
+    <div class="b1">[field:hdqx/]</div>
+  </div>
+  {/dede:arclist}
+  </div>
+  </div>
+  <!--右侧结束-->
+  </div>
+</div>
+<!--活动结束-->
+<!--开始-->
+<div class="ym3">
+  <div class="a3">
+  <h3><img width="174" height="241" src="/images1/bt3.png " /></h3>
+  <div class="a3_1">
+  {dede:arclist type='image' typeid='3' row='4' orderby='pubdate'}
+  <div class="b2">
+  <img src="[field:litpic/]" />
+  <a href="[field:arcurl/]" title="[field:fulltitle/]"></a>
+  </div>
+  {/dede:arclist}
+  </div>
+  </div>
+</div>
+<!--结束-->
+<!--开始-->
+<div class="ym4">
+  <h3><span id="bt_case2"> <b>最新<a>客片摄影</a>大赏</b><p>NEW COUPLES SHOW CASE</p></span>
+  <div class="ck2"><a class="ck_more" href="/syzp/"> MORE ></a></div>
+  </h3>
+  <div class="ym4_1">
+  {dede:arclist type='image' typeid='2' row='3' titlelen='40' orderby='pubdate'}
+  <div class="a5">
+    <div class="pic">
+	<img src="[field:litpic/]" />
+	<a href="[field:arcurl/]" title="[field:fulltitle/]"><div class="zi"><p>post time:[field:pubdate function="MyDate('Y-m-d',@me)"/]</p><h2>[field:title/]</h2></div></a>
+	</div>
+  </div>
+  {/dede:arclist}
+  </div>
+</div>
+<!--结束-->
+<!--团队开始-->
+<div class="ym5" >
+  <div class="ym5_1" ><div class="ck3"><a class="ck_more" href="/syjd/"> MORE ></a></div></div>
+  <div class="ym5_2">
+    {dede:arclist type='image' typeid='2,3' row='18' titlelen='15' wide='82px' hight='82px' orderby='pubdate'}
+    <div class="c1">
+      <h2><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h2>
+	  <p>[field:shorttitle/]</p>
+	  <div class="pic"><a href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" alt="[field:fulltitle/]" width="82" height="82" /></a></div>
+	</div>
+	{/dede:arclist}
+  </div>
+  <div class="ym5_3"></div>
+</div>
+<!--团队结束-->
+<!--新闻开始-->
+<div class="ym6">
+  <div class="ym6_1">
+  <div class="c2">
+  <h2><span id="bt_case2"> <b>最新<a>行业新闻</a></b><p>INDUSTRY NEWS</p></span></h2>
+  <div class="c2_1">
+  {dede:arclist type='image' typeid='8' titlelen='25' infolen='60' orderby='pubdate' limit='0,1'}
+  <div class="d1">
+    <div class="pic"><a href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" alt="[field:fulltitle/]" /></a></div>
+    <div class="d1_1">
+    <div class="e1">posttime:[field:pubdate function="MyDate('Y/m/d',@me)"/]</div>
+    <h3><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h3>
+    <p><a href="[field:arcurl/]">[field:info/]...</a></p>
+    </div>
+  </div>
+  {/dede:arclist}
+  {dede:arclist typeid='8' titlelen='38' orderby='pubdate' limit='1,5'}
+  <div class="d2">
+    <h3><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h3>
+    <div class="e2">[field:pubdate function="MyDate('Y/m/d',@me)"/]</div>
+  </div>
+  {/dede:arclist}
+  </div>
+  </div>
+  <div class="c3">
+  <h2><span id="bt_case2"> <b>最新<a>公司动态</a></b><p>COMPANY NEWS</p></span></h2>
+  <div class="c3_1">
+  {dede:arclist type='image' typeid='8' titlelen='25' infolen='90' row='3' orderby='pubdate'}
+  <div class="e4">
+    <div class="pic"><a href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" alt="[field:fulltitle/]" /></a></div>
+    <div class="e4_1">
+    <div class="sj">posttime:[field:pubdate function="MyDate('Y/m/d',@me)"/]</div>
+    <h3><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h3>
+    <p><a href="[field:arcurl/]">[field:info/]...</a></p>
+    </div>
+  </div>
+  {/dede:arclist}
+  </div>
+  </div>
+  </div>
+</div>
+<!--新闻结束-->
+{dede:include filename="foot.htm"/}
+</body>
+</html>
